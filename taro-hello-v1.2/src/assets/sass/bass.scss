@@ -1,0 +1,47 @@
+/**
+global style base scss
+ */
+//@use "sass:meta";
+
+//@mixin font-sizes($args...){
+//  @each $name,$fontSize in meta.keywords($args){
+//    .#{$name}{
+//      font-size: $fontSize
+//    }
+//  }
+//}
+//
+//@include font-sizes(
+//  $f_s_20:20px,
+//  $f_s_30:30px,
+//  $f_s_40:30px
+//)
+
+/* 字体大小 */
+/*
+.f_s_20{
+  font-size: 20px;
+}
+*/
+$fontSizes: 20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,60,64;
+@each $size in $fontSizes{
+  .f_s_#{$size}{
+    font-size:#{$size}px;
+  }
+}
+
+/* 字体粗细 */
+$fontWeights: 500,700;
+@each $weight in $fontWeights{
+  .f_w_#{$weight}{
+    font-weight:$weight;
+  }
+}
+
+/* 水平对齐 */
+$aligns:('c':center,'l':left,'r':right);
+@each $name,$value in $aligns{
+  .t_a_#{$name}{
+    text-align: #{$value};
+  }
+}

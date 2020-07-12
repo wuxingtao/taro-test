@@ -1,0 +1,20 @@
+.xt-wrapper {
+  background-color: red;
+  font-size: 20px;
+  height:100vh;
+  white-space: nowrap;
+}
+
+.member-lists{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  .member-item{
+    flex:1;
+    width: 100px;
+    height:200px;
+    padding: 20px;
+    border: 1px solid blanchedalmond;
+  }
+}

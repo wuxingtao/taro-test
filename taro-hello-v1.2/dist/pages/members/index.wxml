@@ -1,0 +1,9 @@
+<block>
+    <view class="xt-wrapper">
+        <view class="f_s_64">member pages</view>
+        <view class="member-lists">
+            <view class="member-item f_s_34 t_a_c" wx:key="index" wx:for="{{lists}}" wx:for-item="item" wx:for-index="index">{{item}}</view>
+        </view>
+        <view>1234</view>
+    </view>
+</block>
