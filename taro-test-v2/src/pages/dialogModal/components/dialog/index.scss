@@ -1,0 +1,58 @@
+.dialog-box {
+  .shadow-show {
+
+  }
+  .shadow {
+    overflow-y: hidden;
+
+    .dialog-slide {
+      transform: translate3d(0, 0, 0) !important;
+      visibility: visible !important;
+    }
+
+    .contant {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ffffff;
+      overflow: hidden;
+      transform: translate3d(0, 100%, 0);
+      transition: all 0.2s linear;
+      visibility: hidden;
+
+      .title-box {
+        border-bottom: 2rpx solid #F2F0F4;
+      }
+
+      .content {
+        height: 108px;
+        border-bottom: 2px solid #f2f0f4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+
+        .content_title {
+          font-size: 40px;
+          font-weight: bold;
+          color: #333333;
+        }
+
+        .content_images {
+          padding: 30px 0 30px 30px;
+        }
+      }
+
+      .spacing-box {
+        position: relative;
+        padding: 40px;
+      }
+
+      // 针对省市区去掉padding-top
+      .spacing-TB {
+        padding-top: 0;
+      }
+    }
+  }
+}

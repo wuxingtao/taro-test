@@ -20,8 +20,18 @@ class App extends Component {
 
   config = {
     pages: [
-      'pages/visitor/index',
+      'pages/dialogModal/index',
+      'pages/visitor/index', // 数字验证输入款
       'pages/index/index',
+    ],
+    subpackages:[
+      {
+        // 表单
+        root: 'packages/form',
+        pages:[
+          'dialogModal/index'
+        ]
+      }
     ],
     window: {
       backgroundTextStyle: 'light',
